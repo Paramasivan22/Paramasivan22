@@ -1,0 +1,74 @@
+.container{
+    width: 1200px;
+    margin: auto;
+}
+.banner-wrapper{
+ display: flex;
+}
+.banner-left{
+   flex-basis: 50%;
+   padding-top:90px ;
+}
+.banner-right{
+   flex-basis: 50%;
+   padding: 60px;
+   text-align: center;
+}
+.about-wrapper{
+    display: flex;
+    background-color: wheat;
+    padding: 30px;
+    margin-top: 40px;
+   }
+   .about-left{
+      flex-basis: 50%;
+   }
+   .about-right{
+      flex-basis: 50%;
+   }
+   .service-details
+   {
+    display: flex;
+   }
+   .service-detail{
+    flex-basis: 25%;
+   }
+   #header {
+      background-color: aliceblue;
+      padding: 14px 0;
+   }
+   #header h1{
+      font-size: 20px;
+   }
+   #banner{
+      background-color: #f5f2f2;
+      height: 400px;
+   }
+   #banner h2{
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   }
+   #banner p{
+      font-size: 25px;
+   }
+   #banner a{
+      background-color: rgb(53, 53, 90);
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+   }
+   #banner img{
+      max-width: 60%;
+   }
+   #about img{
+      max-width: 60%;
+   }
+   #service h2{
+      text-align: center;
+   }
+   #service img{
+      max-width: 90px;
+      
+   }
+
+  
+   
