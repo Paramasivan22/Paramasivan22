@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Deletion Form</title>
+    <script src="./script.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 flex items-center justify-center h-screen">
+    <nav class="bg-blue-500 p-4">
+        <div class="container mx-auto flex items-center justify-between">
+            
+            <a href="#" class="text-white font-bold text-lg">Student management system</a>
+
+            
+            <div class="space-x-4">
+                <a href="./insert.html" class="text-white hover:text-gray-300">Insert</a>
+                <a href="./read.html" class="text-white hover:text-gray-300">Read</a>
+                <a href="./update.html" class="text-white hover:text-gray-300">update</a>
+                <a href="./delete.html" class="text-white hover:text-gray-300">Delete</a>
+            </div>
+        </div>
+    </nav>
+    <div class="bg-white p-8 rounded shadow-md w-96">
+        <h2 class="text-2xl font-bold text-center mb-4">Student Deletion Form</h2>
+        <form id="deleteForm">
+            <label for="studentId" class="block text-sm font-medium text-gray-600">Student ID:</label>
+            <input type="text" id="studentId" name="studentId" class="w-full p-2 border rounded mt-1" required>
+
+            <button onclick="deletes()" type="submit" class="w-full bg-red-500 text-white p-2 rounded mt-4 hover:bg-red-600 transition">Delete Student</button>
+        </form>
+    </div>
+</body>
+</html>

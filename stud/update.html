@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Update Form</title>
+    <script src="./script.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 flex items-center justify-center h-screen">
+    <nav class="bg-blue-500 p-4">
+        <div class="container mx-auto flex items-center justify-between">
+            
+            <a href="#" class="text-white font-bold text-lg">Student management system</a>
+
+            
+            <div class="space-x-4">
+                <a href="./insert.html" class="text-white hover:text-gray-300">Insert</a>
+                <a href="./read.html" class="text-white hover:text-gray-300">Read</a>
+                <a href="./update.html" class="text-white hover:text-gray-300">update</a>
+                <a href="./delete.html" class="text-white hover:text-gray-300">Delete</a>
+            </div>
+        </div>
+    </nav>
+    <div class="bg-white p-8 rounded shadow-md w-96">
+        <h2 class="text-2xl font-bold text-center mb-4">Student Update Form</h2>
+        <form id="updateForm">
+            <label for="studentId" class="block text-sm font-medium text-gray-600">Student ID:</label>
+            <input type="text" id="studentId" name="studentId" class="w-full p-2 border rounded mt-1" required>
+
+            <label for="fullName" class="block text-sm font-medium text-gray-600 mt-4">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" class="w-full p-2 border rounded mt-1" required>
+
+            <label for="email" class="block text-sm font-medium text-gray-600 mt-4">Email:</label>
+            <input type="email" id="email" name="email" class="w-full p-2 border rounded mt-1" required>
+
+            <label for="dob" class="block text-sm font-medium text-gray-600 mt-4">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" class="w-full p-2 border rounded mt-1" required>
+
+            <label for="department" class="block text-sm font-medium text-gray-600 mt-4">Department:</label>
+            <select id="department" name="department" class="w-full p-2 border rounded mt-1" required>
+                <option value="computerScience">Computer Science</option>
+                <option value="electricalEngineering">Electrical Engineering</option>
+                <option value="mechanicalEngineering">Mechanical Engineering</option>
+            </select>
+
+            <button onclick="update()" type="submit" class="w-full bg-blue-500 text-white p-2 rounded mt-4 hover:bg-blue-600 transition">Update Information</button>
+        </form>
+    </div>
+</body>
+</html>
