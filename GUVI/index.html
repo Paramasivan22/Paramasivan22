@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <div class="main">
+        <nav>
+            <div class="logo">
+                <img src="image/zoro.jpg">
+                <div>
+                    <h4>One Piece</h4>
+                </div>
+            </div>
+            <div class="nav-link">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Catogary</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="information">
+            <div class="overlay"></div>
+            <img src="image/strawhat.jpg" class="strawhat">
+            <div id="circle">
+                <div class="feature one">
+                  <img src="image/Luffy.jpg">
+                  <div>
+                    <h3>Money.D.Luffy</h3>
+                    <p>Protoganist of the One Piece Anime. <br>He is Pirate</p>
+                  </div>
+                </div>
+                <div class="feature two">
+                    <img src="image/zoro1.jpg">
+                    <div>
+                        <h3>Roronoa Zoro</h3>
+                        <p>He is vice Captain.</p>
+                      </div>
+                </div>
+                <div class="feature three">
+                    <img src="image/sanji.jpg">
+                    <div>
+                        <h3>Black Leg Sanji</h3>
+                        <p>Sanji is Cook of the Pirate</p>
+                      </div>
+                </div>
+                <div class="feature four">
+                    <img src="image/bro.jpg">
+                    <div>
+                        <h3>Brother of Luffy</h3>
+                        <p>Monster Trio Brother</p>
+                      </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="controls">
+            <img src="image/up.png" id="upbtn">
+            <h3>Switch Character</h3>
+            <img src="image/up.png" id="downbtn">
+        </div>
+    </div>
+    <script>
+        var circle = document.getElementById("circle");
+        var upbtn = document.getElementById("upbtn");
+        var downbtn = document.getElementById("downbtn");
+
+        var rotateValue = circle.style.transform;
+        var rotateSum;
+
+        upbtn.onclick = function(){
+            rotateSum = rotateValue + "rotate(-90deg)";
+            circle.style.transform = rotateSum;
+            rotateValue = rotateSum;
+        }
+        downbtn.onclick = function(){
+            rotateSum = rotateValue + "rotate(90deg)";
+            circle.style.transform = rotateSum;
+            rotateValue = rotateSum;
+        }
+    </script>
+    
+</body>
+</html>
